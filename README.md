@@ -1,5 +1,7 @@
 # E-Commerce Platform: Fully Implemented 
 
+[![Edit dravasp/ecommerce/main](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/p/github/dravasp/ecommerce/main?embed=1)
+
 Preview on Code Sandbox
 
 https://github.com/user-attachments/assets/9f6dae9b-3a03-4cb3-a9e8-a68b3a481b1c
@@ -239,5 +241,7 @@ Below is a high-level wireframe of your Redis + PostgreSQL-backed store, fol
    - Frontend component library & theming  
 3. Share brand assets (logos, fonts, primary/secondary colors) for a refined mock-up.
 
-Sing-in to Preview
-https://codesandbox.io/p/sandbox/github/dravasp/ecommerce
+Extended Preview
+
+https://github.com/user-attachments/assets/148777d0-282c-4a3f-891c-58b3b61a2e14
+
