@@ -164,3 +164,73 @@ WEBHOOK_BASE_URL=https://ecommerce-dravasp.vercel.app/api/webhooks
    - Test right-click disable, CSP headers, HSTS, EV TLS certificate.
 
 ---
+
+# Preview: Next-Gen E-Commerce Platform
+
+Below is a high-level wireframe of your Redis + PostgreSQL-backed store, followed by estimated performance and scaffold-generation times. Let me know if you’d like to adjust colors, layouts, or feature priorities before we spin up any code.
+
+---
+
+## 1. Homepage Wireframe (Textual)
+
+┌──────────────────────────────────────────────────────────────────┐  
+│ [Logo]      Search bar                 🇮🇳 EN ▼  🛒(0)  👤        │  
+├──────────────────────────────────────────────────────────────────┤  
+│ [ Hamburger ]  Home  Categories  Offers  Wallet  Help  More ▼   │  
+├──────────────────────────────────────────────────────────────────┤  
+│ HERO ROTATOR:  
+│ ┌────────────────────────────────────────────────────────────┐  
+│ │ Big seasonal banner with CTA (Shop Now ➔)                 │  
+│ └────────────────────────────────────────────────────────────┘  
+│                                                                  │  
+│ ◎ • ◉ ●   (autoplay, swipe to pause)                              │  
+├───────────────────────────────────┬───────────────────────────────┤  
+│ SIDEBAR FILTERS                  │ FEATURED PRODUCTS GRID          │  
+│ • Category                       │ ┌───────────┬───────────┬───────┐│  
+│ • Price range slider             │ │ Prod img  │ Prod img  │ …     ││  
+│ • Pincode serviceable (input)    │ ├───────────┼───────────┼───────┤│  
+│ • Availability                   │ │ Title     │ Title     │ …     ││  
+│ • Discounts                      │ └───────────┴───────────┴───────┘│  
+│                                  │ [Load more…]                    │  
+├──────────────────────────────────────────────────────────────────┤  
+│ Newsletter signup | Social links  | Payment badges | Trustmarks │  
+├──────────────────────────────────────────────────────────────────┤  
+│ Footer: Company Info | TOS | Privacy | SLA | Security.txt link │  
+└──────────────────────────────────────────────────────────────────┘  
+
+### Key Interactive Elements
+- Dark / Light mode toggle (auto by OS preference)  
+- 2-click “Add to Cart” pop-up confirmation  
+- QR-UPI “Scan & Pay” button on product page  
+- Cookie-consent banner with full DPIA link  
+- Inline “Buy Now, Pay Later” option near checkout  
+
+---
+
+## 2. Performance & Generation Estimates
+
+| Metric                               | Estimated Time      |
+|--------------------------------------|---------------------|
+| Backend scaffold (Redis + Postgres)  | 2,000 ms            |
+| Frontend scaffold (Next.js + Tailwind)| 1,200 ms           |
+| Single React component generation    | 150 – 250 ms        |
+| CI build + lint + type-check         | 4,500 ms            |
+| Time to First Byte (TTFB)            | ~100 ms on AWS/GCP  |
+| Largest Contentful Paint (LCP)       | ~800 ms             |
+| First Input Delay (FID)              | < 10 ms             |
+| Cumulative Layout Shift (CLS)        | < 0.01              |
+| Full page load (mobile, 3G emulation)| ~1,200 ms           |
+
+---
+
+## 3. Next Steps
+
+1. Confirm design tweaks: color palette, custom layouts (e.g., 2×2 vs. 4×4 grids).  
+2. Prioritize modules—would you like to start with:  
+   - Database schema & API endpoints (products, pincodes, taxes)  
+   - Authentication & payment gateway integration  
+   - Frontend component library & theming  
+3. Share brand assets (logos, fonts, primary/secondary colors) for a refined mock-up.
+
+Sing-in to Preview
+https://codesandbox.io/p/sandbox/github/dravasp/ecommerce
