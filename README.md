@@ -1,5 +1,11 @@
 # E-Commerce Platform: Fully Implemented 
 
+Preview on Code Sandbox
+https://github.com/user-attachments/assets/9f6dae9b-3a03-4cb3-a9e8-a68b3a481b1c
+
+Sing-in to Preview
+https://codesandbox.io/p/sandbox/github/dravasp/ecommerce
+
 # E-Commerce Platform: Feature Summary
 
 ## 1. Core Architecture  
