@@ -1,0 +1,33 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Product {
+  id        Int      @id @default(autoincrement())
+  title     String
+  price     Float
+  imageUrl  String
+  gstin     String?
+  upc       String?
+  ean       String?
+  createdAt DateTime @default(now())
+}
+
+model Pincode {
+  id        Int    @id @default(autoincrement())
+  code      String @unique
+  state     String
+  isActive  Boolean @default(true)
+}
+
+model TaxRate {
+  id        Int    @id @default(autoincrement())
+  state     String
+  hsn       String
+  rate      Float
+}
